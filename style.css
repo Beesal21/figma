@@ -1,0 +1,152 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set container to full width and height of viewport */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbox1 {
+  display: flex;
+}
+
+.navtext {
+  align-items: center;
+  margin-right: 2rem;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.openDashboard {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6f42c1;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.mainphoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.mainphoto img {
+  max-width: 100%;
+}
+
+/* footer styles */
+.footer1 {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+}
+
+.footer1 p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color:#fff;
+
+  font-size: 18px;
+}
+
+.footer2 img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.text1, .text2, .text3, .text4, .text5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.text1 h1, .text2 h1, .text3 h1, .text4 h1, .text5 h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+h1{
+  text-align: center;
+}
+
+.maintext{
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbox1 {
+    margin-top: 1rem;
+  }
+
+  .navtext {
+    margin: 0;
+  }
+
+  .openDashboard {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .mainphoto {
+    margin-top: 40px;
+  }
+
+  .footer1 {
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .footer1 p {
+    font-size: 18px;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer2 img {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
